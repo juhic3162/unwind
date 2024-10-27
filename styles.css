@@ -1,0 +1,379 @@
+/* color pallete */
+:root{
+    --tan: #DDD1C7;
+    --green: #627264;
+    --pink: #86626E;
+    --dark: #454138;
+    --lightTan: #F2E3D6; 
+  }
+
+/* applies to everything within body */
+body {
+    margin: 0px;
+    padding-top: 15px;
+    background-color: var(--tan);
+    color: var(--dark);
+    font-family: "Quicksand", sans-serif;
+  }
+
+
+#logo{
+    margin-top:0px;
+    height: 80px;
+
+}
+
+/* header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+} */
+
+.navigation{
+    text-align: center;
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    margin: 0px 160px;
+    flex-direction: row;
+    font-size: 30px;
+}
+
+nav a {
+    color: var(--dark);
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#home{
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+#journals{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#activities{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#breathe{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+h2{
+    text-align: center;
+    color: var(--dark);
+}
+
+main {
+    padding: 1em;
+    text-align: center;
+}
+
+#message{
+    text-align: center;
+    font-size: 70px;
+    margin: 0px 50px;
+    color: var(--dark);
+}
+
+#saveButton{
+    font-family: "Quicksand", sans-serif;
+    background-color: var(--lightTan);
+    border-radius: 12px;
+    width: 75px;
+    height: 30px;
+}
+.button{
+    background-color: rgba(255,255,255, 0);
+    border-color: rgba(255,255,255, 0);
+    display: block;
+    margin: auto;
+}
+
+#yap{
+    margin-right: 20px;
+    font-family: "Quicksand", sans-serif;
+    background-color: var(--lightTan);
+    border-radius: 12px;
+    width: 100px;
+    height: 30px;
+}
+#prompt{
+    margin-left: 20px;
+    font-family: "Quicksand", sans-serif;
+    background-color: var(--lightTan);
+    border-radius: 12px;
+    width: 100px;
+    height: 30px;
+}
+
+#nameInput{
+    width:600px; 
+    height: 350px; 
+}
+
+.journalEntry{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top:80px;
+}
+
+#displayText{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top:60px;
+}
+#angry{
+  width:70px;
+  height:70px;
+  font-size:50px;
+}
+#sad{
+  width:70px;
+  height:70px;
+  font-size:50px;
+}
+#excited{
+  width:70px;
+  height:70px;
+  font-size:50px;
+}
+#happy{
+  width:70px;
+  height:70px;
+  font-size:50px;
+}
+#timer{
+  font-family: "Quicksand", sans-serif;
+}
+#start{
+  font-family: "Quicksand", sans-serif;
+}
+#stop{
+  font-family: "Quicksand", sans-serif;
+}
+#timerButton{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top:80px;
+
+}
+.dropdown {
+    position: relative; /* Relative positioning for dropdown content */
+    display: inline-block; /* Inline block for button */
+}
+#activityDiv{
+  text-align:center;
+}
+.dropbtn {
+    background-color: var(--lightTan); 
+    color: var(--dark); /* White text */
+    padding: 16px; /* Padding */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 4px; /* Rounded corners */
+    font-family: "Quicksand", sans-serif;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioned absolutely */
+    background-color: #f9f9f9; /* Light background */
+    min-width: 160px; /* Minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow */
+    z-index: 1; /* Ensure it appears on top */
+}
+
+.dropdown-content a {
+    color: black; /* Black text */
+    padding: 12px 16px; /* Padding */
+    text-decoration: none; /* No underline */
+    display: block; /* Block display */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Change background on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show the dropdown on hover */
+}
+
+.fade-in-image { 
+    animation: fadeIn 5s; 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    30% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+#cloud{
+    height: 80px;
+    margin-left: 700px;
+}
+#cloud2{
+    height: 80px;
+    margin-right: 700px;
+}
+#allEntries{
+    margin-top: 30%;
+    margin-left:90%;
+    font-family: "Quicksand", sans-serif;
+    background-color: var(--lightTan);
+    border-radius: 12px;
+    width: 100px;
+    height: 40px;
+}
+
+#entries-list{
+  margin-left:50px;
+}
+  
+  /* :root {
+    --box-duration: 16s;
+    --dot-size: 2rem;
+    --color-lighter: #9ab;
+    --color-light: #678;
+    --color-dark: #345;
+    --color-darker: #234;
+    --color-darkest: #123;
+    --color-accent: dodgerblue;
+    font-size: 112.5%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    padding: 1rem;
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.8;
+    background-color: var(--color-darker);
+    background-image: linear-gradient(var(--color-darker), var(--color-darkest));
+    color: var(--color-lighter);
+  }
+  
+
+  .box-container {
+    margin-block: 14vmin;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box-container::after {
+    content: 'inhale';
+    position: absolute;
+    text-align: center;
+    font-size: 24vmin;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    will-change: content;
+    animation: label var(--box-duration) linear infinite, scale var(--box-duration) linear infinite;
+  }
+  
+  .box {
+    inline-size: 50vmin;
+    block-size: 50vmin;
+    margin-inline: auto;
+    position: relative;
+    border: 1px solid transparent;
+    background-image: linear-gradient(var(--color-light), var(--color-dark));
+    will-change: transform;
+    animation: rotate 3s 1s ease-in-out forwards;
+  }
+  
+  .box::before {
+    content: '';
+    display: block;
+    inline-size: var(--dot-size);
+    block-size: var(--dot-size);
+    position: absolute;
+    inset-inline-start: calc(var(--dot-size) * -0.5);
+    inset-block-start: calc(var(--dot-size) * -0.5);
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    will-change: inset, transform, opacity;
+    animation: box var(--box-duration) linear infinite, scale var(--box-duration) linear infinite;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate3d(0, 0, 1, 45deg);
+    }
+  }
+  
+  @keyframes box {
+    0%, 100% {
+      inset-inline-start: calc(var(--dot-size) * -0.5);
+      inset-block-start: calc(var(--dot-size) * -0.5);
+    }
+    25% {
+      inset-inline-start: calc(50vmin - (var(--dot-size) * 0.5));
+      inset-block-start: -1rem;
+    }
+    50% {
+      inset-inline-start: calc(50vmin - (var(--dot-size) * 0.5));
+      inset-block-start: calc(50vmin - (var(--dot-size) * 0.5));
+    }
+    75% {
+      inset-inline-start: -1rem;
+      inset-block-start: calc(50vmin - (var(--dot-size) * 0.5));
+    }
+  }
+  
+  @keyframes scale {
+    0%, 75%, 100% {
+      transform: scale3d(0.5, 0.5, 1);
+      opacity: 0.8;
+    }
+    25%, 50% {
+      transform: scale3d(1, 1, 1);
+      opacity: 0.4;
+    }
+  }
+  
+  @keyframes label {
+    0%, 25% {
+      content: 'inhale';
+    }
+    25.001%, 50%, 75.001%, 100% {
+      content: 'hold';
+    }
+    50.001%, 75% {
+      content: 'exhale';
+    }
+  }
+   */
+  

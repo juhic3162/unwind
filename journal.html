@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unwind - journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="journal">
+    <img id = "logo" src="logo.png" alt = "logo">
+    <header>
+            <nav>
+                <a id = "journals" href="journal.html">Journal</a>
+                <a id = "activites" href="activities.html">Activities</a>
+                <a id = "meditate" href="meditate.html">Meditate</a>
+            </nav>
+    </header>
+    <h2>Time to Destress</h2>
+    <main>
+        <div id="toHide">
+            <button id = "yap" type="button">yap</button>
+            <button id = "prompt" type="button">prompt me</button>
+        </div>
+        <div id = "journalPrompt"></div>
+        <script>
+            const div = document.getElementById('toHide');
+            const promptDiv = document.getElementById('journalPrompt')
+    
+            // Function to hide the div
+            function hideDiv() {
+                div.style.display = 'none'; // Hide the div
+            }
+
+            function handlePromptClick(){
+                hideDiv();
+                promptDiv.textContent = "Prompt";
+                let number = Math.floor(Math.random() * 7) + 1;
+                if (number==1){
+                    promptDiv.textContent = "What are three things that made you happy today?"
+                }
+                if (number==2){
+                    promptDiv.textContent = "What are you most excited about for tomorrow?"
+                }
+                if (number==3){
+                    promptDiv.textContent = "What are you most proud of accomplishing today?"
+                }
+                if (number==4){
+                    promptDiv.textContent = "What is one thing you learned today?"
+                }
+                if (number==5){
+                    promptDiv.textContent = "What am I grateful for today?"
+                }
+                if (number==6){
+                    promptDiv.textContent = "Who are 3 people that make my life better?"
+                }
+                if (number==7){
+                    promptDiv.textContent = "List five things you love about yourself?"
+                }
+
+            }
+    
+            // Get both buttons and add event listeners
+            document.getElementById('yap').addEventListener('click', hideDiv);
+            document.getElementById('prompt').addEventListener('click', handlePromptClick);
+    
+        </script>
+    
+    </main>
+    <div class = "journalEntry">
+    <input type="text" id="nameInput" placeholder="Start Entry"> 
+        <button id="saveButton" onclick="addEntry()">save</button>
+        <p id="output"></p>
+    </div>
+    <a  href="allentries.html">
+        <button id = "allEntries" type="button"> view all enteries</button>
+    </a>
+
+    <script src="/script.js"></script>
+</body>
+</html>

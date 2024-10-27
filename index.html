@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unwind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-page="index">
+    <div id="landing-div">
+    <img id = "logo" src="logo.png" alt = "logo">
+    <p id="message"></p>
+    <a href="journal.html">
+        <button id="arr-btn" type="button" class="button">
+            <div class="fade-in-image">
+                <img src="arrow.png" alt="arrow" width="50"/>
+            </div>
+        </button>
+    </a>
+    <script>
+        let number = Math.floor(Math.random() * 10) + 1;
+        if (number==1){
+            document.getElementById("message").textContent = "You are capable of achieving great things."
+        }
+        if(number==2){
+            document.getElementById("message").textContent = "You have the strength to overcome any challenge."
+        }
+        if(number==3){
+            document.getElementById("message").textContent = "You deserve happiness and success."
+        }
+        if(number==4){
+            document.getElementById("message").textContent = "You are resilient and can handle whatever comes your way."
+        }
+        if(number==5){
+            document.getElementById("message").textContent = "You are constantly growing and improving."
+        }
+        if(number==6){
+            document.getElementById("message").textContent = "You attract positivity and abundance into your life."
+        }
+        if(number==7){
+            document.getElementById("message").textContent = "You are worthy of love and respect."
+        }
+        if(number==8){
+            document.getElementById("message").textContent = "You make a positive impact on the world."
+        }
+        if(number==9){
+            document.getElementById("message").textContent = "You are confident and trust yourself completely."
+        }
+        if(number==10){
+            document.getElementById("message").textContent = "You have everything you need within you to succeed."
+        }
+    </script>
+</div>
+<script src="/script.js"></script>
+</body>
+</html>

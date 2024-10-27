@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unwind - activities</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="activities">
+    <img id = "logo" src="logo.png" alt = "logo">
+    <header>
+        <!-- <h1>Welcome to My Website</h1> -->
+        <nav>
+            <a href="journal.html">Journal</a>
+            <a href="activities.html">Activities</a>
+            <a href="meditate.html">Meditate</a>
+        </nav>
+    </header>
+<div id="activityDiv">
+    <h3>How are you feeling?</h3>
+<div id="emotions">
+    <button id="angry" type="button" onclick="emotions('angry')">😠</button>
+    <button id="sad" type="button" onclick="emotions('sad')">☹️</button>
+    <button id="excited" type="button" onclick="emotions('excited')">🥳</button>
+    <button id="happy" type="button" onclick="emotions('happy')">😌</button>
+</div>
+<div id="displayActivity" style="margin-top: 20px; font-size: 18px;"></div>
+</div>
+<script>
+    function emotions(emotion) {
+        if (emotion === 'angry') {
+            document.getElementById('displayActivity').textContent = "You might want to go for a walk.";
+        } else if (emotion === 'sad') {
+            document.getElementById('displayActivity').textContent = "How about watching a movie?";
+        } else if (emotion === 'excited') {
+            document.getElementById('displayActivity').textContent = "Maybe you can go out with friends!";
+        } else if (emotion === 'happy') {
+            document.getElementById('displayActivity').textContent = "Enjoy your day!";
+        }
+    }
+</script>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
